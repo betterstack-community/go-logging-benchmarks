@@ -50,18 +50,34 @@ func (b *apexBench) name() string {
 	return "Apex"
 }
 
-func (b *apexBench) logEventOnly(msg string) {
+func (b *apexBench) logEvent(msg string) {
 	b.l.Info(msg)
 }
 
-func (b *apexBench) logWithCtx(msg string) {
+func (b *apexBench) logEventFmt(msg string, args ...any) {
+	b.l.Infof(msg, args...)
+}
+
+func (b *apexBench) logEventCtx(msg string) {
 	b.l.WithFields(apexFields()).Info(msg)
+}
+
+func (b *apexBench) logEventCtxWeak(msg string) {
+	b.logEventCtx(msg)
 }
 
 func (b *apexBench) logDisabled(msg string) {
 	b.l.Debug(msg)
 }
 
-func (b *apexBench) logDisabledWithCtx(msg string) {
+func (b *apexBench) logDisabledFmt(msg string, args ...any) {
+	b.l.Debugf(msg, args...)
+}
+
+func (b *apexBench) logDisabledCtx(msg string) {
 	b.l.WithFields(apexFields()).Debug(msg)
+}
+
+func (b *apexBench) logDisabledCtxWeak(msg string) {
+	b.logDisabledCtx(msg)
 }

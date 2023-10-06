@@ -1,4 +1,4 @@
-name: benchmark
+name: Run Go Logging benchmarks
 
 on:
   workflow_dispatch:

@@ -34,7 +34,9 @@ func newPhusLog(w io.Writer) log.Logger {
 		Caller:     0,
 		TimeField:  "time",
 		TimeFormat: time.RFC3339Nano,
-		Writer:     &log.IOWriter{w},
+		Writer: &log.IOWriter{
+			Writer: w,
+		},
 	}
 
 	return l
@@ -63,18 +65,34 @@ func (b *phusLogBench) name() string {
 	return "Phuslog"
 }
 
-func (b *phusLogBench) logEventOnly(msg string) {
+func (b *phusLogBench) logEvent(msg string) {
 	b.l.Info().Msg(msg)
 }
 
-func (b *phusLogBench) logWithCtx(msg string) {
+func (b *phusLogBench) logEventFmt(msg string, args ...any) {
+	b.l.Info().Msgf(msg, args...)
+}
+
+func (b *phusLogBench) logEventCtx(msg string) {
 	phusFields(b.l.Info()).Msg(msg)
+}
+
+func (b *phusLogBench) logEventCtxWeak(msg string) {
+	b.l.Info().Fields(mapFields()).Msg(msg)
 }
 
 func (b *phusLogBench) logDisabled(msg string) {
 	b.l.Debug().Msg(msg)
 }
 
-func (b *phusLogBench) logDisabledWithCtx(msg string) {
+func (b *phusLogBench) logDisabledFmt(msg string, args ...any) {
+	b.l.Debug().Msgf(msg, args...)
+}
+
+func (b *phusLogBench) logDisabledCtx(msg string) {
 	phusFields(b.l.Debug()).Msg(msg)
+}
+
+func (b *phusLogBench) logDisabledCtxWeak(msg string) {
+	b.l.Debug().Fields(mapFields()).Msg(msg)
 }

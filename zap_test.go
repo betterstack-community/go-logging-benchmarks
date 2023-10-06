@@ -1,6 +1,7 @@
 package bench
 
 import (
+	"fmt"
 	"io"
 
 	"go.uber.org/multierr"
@@ -77,20 +78,36 @@ func (b *zapBench) name() string {
 	return "Zap"
 }
 
-func (b *zapBench) logEventOnly(msg string) {
+func (b *zapBench) logEvent(msg string) {
 	b.l.Info(msg)
 }
 
-func (b *zapBench) logWithCtx(msg string) {
+func (b *zapBench) logEventFmt(msg string, args ...any) {
+	b.l.Info(fmt.Sprintf(msg, args...))
+}
+
+func (b *zapBench) logEventCtx(msg string) {
 	b.l.Info(msg, zapFields()...)
+}
+
+func (b *zapBench) logEventCtxWeak(msg string) {
+	b.l.Sugar().Infow(msg, alternatingKeyValuePairs()...)
 }
 
 func (b *zapBench) logDisabled(msg string) {
 	b.l.Debug(msg)
 }
 
-func (b *zapBench) logDisabledWithCtx(msg string) {
+func (b *zapBench) logDisabledFmt(msg string, args ...any) {
+	b.l.Debug(fmt.Sprintf(msg, args...))
+}
+
+func (b *zapBench) logDisabledCtx(msg string) {
 	b.l.Debug(msg, zapFields()...)
+}
+
+func (b *zapBench) logDisabledCtxWeak(msg string) {
+	b.l.Sugar().Debugw(msg, alternatingKeyValuePairs()...)
 }
 
 type zapSugarBench struct {
@@ -113,18 +130,34 @@ func (b *zapSugarBench) name() string {
 	return "ZapSugar"
 }
 
-func (b *zapSugarBench) logEventOnly(msg string) {
+func (b *zapSugarBench) logEvent(msg string) {
 	b.l.Info(msg)
 }
 
-func (b *zapSugarBench) logWithCtx(msg string) {
+func (b *zapSugarBench) logEventFmt(msg string, args ...any) {
+	b.l.Infof(msg, args...)
+}
+
+func (b *zapSugarBench) logEventCtx(msg string) {
 	b.l.Infow(msg, alternatingKeyValuePairs()...)
+}
+
+func (b *zapSugarBench) logEventCtxWeak(msg string) {
+	b.logEventCtx(msg)
 }
 
 func (b *zapSugarBench) logDisabled(msg string) {
 	b.l.Debug(msg)
 }
 
-func (b *zapSugarBench) logDisabledWithCtx(msg string) {
+func (b *zapSugarBench) logDisabledFmt(msg string, args ...any) {
+	b.l.Debugf(msg, args...)
+}
+
+func (b *zapSugarBench) logDisabledCtx(msg string) {
 	b.l.Debugw(msg, alternatingKeyValuePairs()...)
+}
+
+func (b *zapSugarBench) logDisabledCtxWeak(msg string) {
+	b.logDisabledCtx(msg)
 }

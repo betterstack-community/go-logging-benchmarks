@@ -1,6 +1,7 @@
 package bench
 
 import (
+	"fmt"
 	"io"
 
 	"github.com/inconshreveable/log15"
@@ -34,18 +35,34 @@ func (b *log15Bench) name() string {
 	return "Log15"
 }
 
-func (b *log15Bench) logEventOnly(msg string) {
+func (b *log15Bench) logEvent(msg string) {
 	b.l.Info(msg)
 }
 
-func (b *log15Bench) logWithCtx(msg string) {
+func (b *log15Bench) logEventFmt(msg string, args ...any) {
+	b.l.Info(fmt.Sprintf(msg, args...))
+}
+
+func (b *log15Bench) logEventCtx(msg string) {
 	b.l.Info(msg, alternatingKeyValuePairs()...)
+}
+
+func (b *log15Bench) logEventCtxWeak(msg string) {
+	b.logEventCtx(msg)
 }
 
 func (b *log15Bench) logDisabled(msg string) {
 	b.l.Debug(msg)
 }
 
-func (b *log15Bench) logDisabledWithCtx(msg string) {
+func (b *log15Bench) logDisabledFmt(msg string, args ...any) {
+	b.l.Debug(fmt.Sprintf(msg, args...))
+}
+
+func (b *log15Bench) logDisabledCtx(msg string) {
 	b.l.Debug(msg, alternatingKeyValuePairs()...)
+}
+
+func (b *log15Bench) logDisabledCtxWeak(msg string) {
+	b.logDisabledCtx(msg)
 }

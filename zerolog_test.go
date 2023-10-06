@@ -74,18 +74,34 @@ func (b *zerologBench) name() string {
 	return "Zerolog"
 }
 
-func (b *zerologBench) logEventOnly(msg string) {
+func (b *zerologBench) logEvent(msg string) {
 	b.l.Info().Msg(msg)
 }
 
-func (b *zerologBench) logWithCtx(msg string) {
+func (b *zerologBench) logEventFmt(msg string, args ...any) {
+	b.l.Info().Msgf(msg, args...)
+}
+
+func (b *zerologBench) logEventCtx(msg string) {
 	zerologFields(b.l.Info()).Msg(msg)
+}
+
+func (b *zerologBench) logEventCtxWeak(msg string) {
+	b.l.Info().Fields(alternatingKeyValuePairs()).Msg(msg)
 }
 
 func (b *zerologBench) logDisabled(msg string) {
 	b.l.Debug().Msg(msg)
 }
 
-func (b *zerologBench) logDisabledWithCtx(msg string) {
+func (b *zerologBench) logDisabledFmt(msg string, args ...any) {
+	b.l.Debug().Msgf(msg, args...)
+}
+
+func (b *zerologBench) logDisabledCtx(msg string) {
 	zerologFields(b.l.Debug()).Msg(msg)
+}
+
+func (b *zerologBench) logDisabledCtxWeak(msg string) {
+	b.l.Debug().Fields(alternatingKeyValuePairs()).Msg(msg)
 }

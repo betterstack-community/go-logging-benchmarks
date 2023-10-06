@@ -55,6 +55,20 @@ var (
 	ctxErr           = errors.New("failed to open file: /home/dev/new.txt")
 )
 
+func mapFields() map[string]any {
+	return map[string]any{
+		"bytes":           ctxBodyBytes,
+		"request":         ctxRequest,
+		"elapsed_time_ms": ctxTimeElapsedMs,
+		"user":            ctxUser,
+		"now":             ctxTime,
+		"months":          ctxMonths,
+		"primes":          ctxFirst10Primes,
+		"users":           ctxUsers,
+		"error":           ctxErr,
+	}
+}
+
 func alternatingKeyValuePairs() []any {
 	return []any{
 		"bytes", ctxBodyBytes,
@@ -69,7 +83,17 @@ func alternatingKeyValuePairs() []any {
 	}
 }
 
-var logMsg = "The quick brown fox jumps over the lazy dog"
+var (
+	logMsg     = "The quick brown fox jumps over the lazy dog"
+	logMsgFmt  = "User: %s, Age: %d, Height: %.2f cm, Married: %t, Birthdate: %02d-%s-%d"
+	logMsgArgs = []any{
+		"Alice",
+		30,
+		175.5,
+		true,
+		time.Date(1992, time.January, 15, 0, 0, 0, 0, time.UTC),
+	}
+)
 
 var loggers = []logBenchmark{
 	&zerologBench{},
@@ -100,8 +124,12 @@ type logBenchmark interface {
 	new(w io.Writer) logBenchmark
 	newWithCtx(w io.Writer) logBenchmark
 	name() string
-	logEventOnly(msg string)
-	logWithCtx(msg string)
+	logEvent(msg string)
+	logEventFmt(msg string, args ...any)
+	logEventCtx(msg string)
+	logEventCtxWeak(msg string)
 	logDisabled(msg string)
-	logDisabledWithCtx(msg string)
+	logDisabledFmt(msg string, args ...any)
+	logDisabledCtx(msg string)
+	logDisabledCtxWeak(msg string)
 }

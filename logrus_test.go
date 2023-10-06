@@ -6,20 +6,6 @@ import (
 	"github.com/sirupsen/logrus"
 )
 
-func logrusFields() logrus.Fields {
-	return logrus.Fields{
-		"bytes":           ctxBodyBytes,
-		"request":         ctxRequest,
-		"elapsed_time_ms": ctxTimeElapsedMs,
-		"user":            ctxUser,
-		"now":             ctxTime,
-		"months":          ctxMonths,
-		"primes":          ctxFirst10Primes,
-		"users":           ctxUsers,
-		"error":           ctxErr,
-	}
-}
-
 func newLogrus(w io.Writer) *logrus.Logger {
 	l := logrus.New()
 	l.Out = w
@@ -41,7 +27,7 @@ func (b *logrusBench) new(w io.Writer) logBenchmark {
 
 func (b *logrusBench) newWithCtx(w io.Writer) logBenchmark {
 	return &logrusBench{
-		l: newLogrus(w).WithFields(logrusFields()).Logger,
+		l: newLogrus(w).WithFields(mapFields()).Logger,
 	}
 }
 
@@ -49,18 +35,34 @@ func (b *logrusBench) name() string {
 	return "Logrus"
 }
 
-func (b *logrusBench) logEventOnly(msg string) {
+func (b *logrusBench) logEvent(msg string) {
 	b.l.Info(msg)
 }
 
-func (b *logrusBench) logWithCtx(msg string) {
-	b.l.WithFields(logrusFields()).Info(msg)
+func (b *logrusBench) logEventFmt(msg string, args ...any) {
+	b.l.Infof(msg, args...)
+}
+
+func (b *logrusBench) logEventCtx(msg string) {
+	b.l.WithFields(mapFields()).Info(msg)
+}
+
+func (b *logrusBench) logEventCtxWeak(msg string) {
+	b.logEventCtx(msg)
 }
 
 func (b *logrusBench) logDisabled(msg string) {
 	b.l.Debug(msg)
 }
 
-func (b *logrusBench) logDisabledWithCtx(msg string) {
-	b.l.WithFields(logrusFields()).Debug(msg)
+func (b *logrusBench) logDisabledFmt(msg string, args ...any) {
+	b.l.Debugf(msg, args...)
+}
+
+func (b *logrusBench) logDisabledCtx(msg string) {
+	b.l.WithFields(mapFields()).Debug(msg)
+}
+
+func (b *logrusBench) logDisabledCtxWeak(msg string) {
+	b.logDisabledCtx(msg)
 }

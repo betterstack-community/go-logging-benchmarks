@@ -1,6 +1,7 @@
 package bench
 
 import (
+	"fmt"
 	"io"
 	"time"
 
@@ -40,18 +41,34 @@ func (b *logfBench) name() string {
 	return "Logf"
 }
 
-func (b *logfBench) logEventOnly(msg string) {
+func (b *logfBench) logEvent(msg string) {
 	b.l.Info(msg)
 }
 
-func (b *logfBench) logWithCtx(msg string) {
+func (b *logfBench) logEventFmt(msg string, args ...any) {
+	b.l.Info(fmt.Sprintf(msg, args...))
+}
+
+func (b *logfBench) logEventCtx(msg string) {
 	b.l.Info(msg, alternatingKeyValuePairs()...)
+}
+
+func (b *logfBench) logEventCtxWeak(msg string) {
+	b.logEventCtx(msg)
 }
 
 func (b *logfBench) logDisabled(msg string) {
 	b.l.Debug(msg)
 }
 
-func (b *logfBench) logDisabledWithCtx(msg string) {
+func (b *logfBench) logDisabledFmt(msg string, args ...any) {
+	b.l.Debug(fmt.Sprintf(msg, args...))
+}
+
+func (b *logfBench) logDisabledCtx(msg string) {
 	b.l.Debug(msg, alternatingKeyValuePairs()...)
+}
+
+func (b *logfBench) logDisabledCtxWeak(msg string) {
+	b.logDisabledCtx(msg)
 }
