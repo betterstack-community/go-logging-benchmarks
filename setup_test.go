@@ -101,6 +101,7 @@ var loggers = []logBenchmark{
 	&zapBench{},
 	&zapSugarBench{},
 	&slogBench{},
+	&slogZapBench{},
 	&apexBench{},
 	&logrusBench{},
 	&log15Bench{},
