@@ -51,10 +51,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Change directory
-        run: cd docs
-
       - name: Bundle
+        working-directory: ./docs
         run: npm run build:prod
 
       - name: Commit benchmark results to repo
