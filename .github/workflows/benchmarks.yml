@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ github.head_ref }}
 
@@ -34,4 +34,30 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           message: Update benchmark results
+          commit: '--no-verify'
+
+  update_report:
+    runs-on: ubuntu-latest
+    needs: run_tests
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Change directory
+        run: cd docs
+
+      - name: Bundle
+        run: npm run build:prod
+
+      - name: Commit benchmark results to repo
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: Update benchmark report
           commit: '--no-verify'
