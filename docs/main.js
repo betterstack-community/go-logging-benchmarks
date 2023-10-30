@@ -1,6 +1,6 @@
 import ApexCharts from 'apexcharts';
 import chart from './chart.js';
-import data from '../../bench.json';
+import data from '../bench.json';
 
 let categories = [];
 let libraries = [];
