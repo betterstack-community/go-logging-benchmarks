@@ -17,7 +17,6 @@ const series = {
 };
 
 function pushToCharts(prop, lib, value) {
-  console.log(prop, lib, value);
   const i = series[prop].findIndex((obj) => obj.name === lib);
   if (i === -1) {
     series[prop].push({
@@ -36,8 +35,6 @@ benchmarks.forEach((item) => {
   const library = item.Name.split('/')[1].split('-')[0];
   categories.push(benchName);
   libraries.push(library);
-
-  console.log(libraries);
 
   if (!benchName.includes('Disabled')) {
     pushToCharts('executionTime', library, item.NsPerOp);
