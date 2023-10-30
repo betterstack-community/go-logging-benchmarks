@@ -1,0 +1,149 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* End of reset */
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: white;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(234 236 241/1);
+}
+
+.plain-link {
+  color: inherit;
+  text-decoration: none;
+  background: none;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  line-height: inherit;
+  display: contents;
+}
+
+.plain-link:hover,
+.plain-link:active,
+.plain-link:focus {
+  color: inherit;
+  text-decoration: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.button-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(0deg, #5b63d3, #5b63d3),
+    linear-gradient(258.47deg, #5b63d3 38.52%, #795fd0 98.47%);
+  color: #ffffff; /* White text */
+  border-radius: 4px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  font-size: 16px; /* Text size */
+  border: none; /* No border */
+  cursor: pointer; /* Hand cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.button-link:focus {
+  outline: none; /* Remove focus outline */
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.5); /* Add a blue glow when focused */
+}
+
+.main {
+  margin: 0 auto;
+  padding: 50px;
+  max-width: 1200px;
+}
+
+.column {
+  margin-top: 50px;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 30px;
+  box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
+    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+}
+
+.chart {
+  min-height: 500px;
+}
+
+@media screen and (max-width: 550px) {
+  html {
+    font-size: 14px;
+  }
+
+  nav {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  .main {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

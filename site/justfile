@@ -1,0 +1,15 @@
+APP := "benchmarks"
+
+default: server
+
+build-dev:
+  pnpm build:dev
+
+build-prod:
+  pnpm build:prod
+
+clean:
+  rm -r dist
+
+server:
+  pnpm run server

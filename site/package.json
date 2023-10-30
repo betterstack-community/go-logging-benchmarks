@@ -1,0 +1,21 @@
+{
+  "name": "benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build:prod": "esbuild --bundle --minify --outfile=dist/main.js main.js",
+    "build:dev": "esbuild --watch --bundle --minify --outfile=dist/main.js main.js",
+    "server": "http-server -p 4000"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apexcharts": "^3.43.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "esbuild": "^0.19.4"
+  }
+}
