@@ -1,5 +1,7 @@
 # Go Logging Benchmarks
 
+![Benchmark results](screenshot.png)
+
 This repo compares the performance of popular
 [Go Logging Libraries](https://betterstack.com/community/guides/logging/best-golang-logging-libraries/)
 including the new Slog package.
@@ -8,18 +10,16 @@ including the new Slog package.
 
 The following libraries are being tested:
 
-- [Zerolog](https://github.com/rs/zerolog).
-- [Zap](https://github.com/uber-go/zap).
-- [Apex/log](https://github.com/uber-go/zap).
-- [Logrus](https://github.com/sirupsen/logrus).
-- [Slog](https://pkg.go.dev/log/slog).
+- [Zerolog](https://github.com/rs/zerolog)
+- [Zap](https://github.com/uber-go/zap)
+- [Apex/log](https://github.com/uber-go/zap)
+- [Logrus](https://github.com/sirupsen/logrus)
+- [Slog](https://pkg.go.dev/log/slog)
 - [SlogZap](https://github.com/uber-go/zap/tree/master/exp/zapslog) (Slog with
-  Zap backend).
-- [Phuslog](https://github.com/phuslu/log).
-- [Log15](https://github.com/inconshreveable/log15).
-- [Logf](https://github.com/zerodha/logf).
-
-![Benchmark results](screenshot.png).
+  Zap backend)
+- [Phuslog](https://github.com/phuslu/log)
+- [Log15](https://github.com/inconshreveable/log15)
+- [Logf](https://github.com/zerodha/logf)
 
 ## 🟢 Prerequisites
 
@@ -31,7 +31,11 @@ the benchmarks.
 - Clone the repository to your computer:
 
 ```bash
-git clone https://github.com/betterstack-community/go-logging-benchmarks && cd go-logging-benchmarks
+git clone https://github.com/betterstack-community/go-logging-benchmarks
+```
+
+```bash
+cd go-logging-benchmarks
 ```
 
 - Download the dependencies:
