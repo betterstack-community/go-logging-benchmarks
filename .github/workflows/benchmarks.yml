@@ -1,4 +1,4 @@
-name: Run Go Logging benchmarks
+name: Update Benchmarks
 on:
   workflow_dispatch:
   schedule:
@@ -7,7 +7,7 @@ on:
     branches:
       - main
 jobs:
-  benchmark:
+  run_benchmark:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
