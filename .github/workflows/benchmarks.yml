@@ -51,6 +51,10 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install dependences
+        working-directory: ./docs
+        run: npm install
+
       - name: Bundle
         working-directory: ./docs
         run: npm run build:prod
