@@ -11,6 +11,7 @@ require (
 	github.com/zerodha/logf v0.5.5
 	go.uber.org/multierr v1.10.0
 	go.uber.org/zap v1.25.0
+	go.uber.org/zap/exp v0.2.0
 )
 
 require (
@@ -18,10 +19,6 @@ require (
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
-	github.com/samber/lo v1.38.1 // indirect
-	github.com/samber/slog-zerolog v1.0.0 // indirect
-	go.uber.org/zap/exp v0.2.0 // indirect
-	golang.org/x/exp v0.0.0-20230522175609-2e198f4a06a1 // indirect
 	golang.org/x/sys v0.12.0 // indirect
 	golang.org/x/term v0.12.0 // indirect
 )
