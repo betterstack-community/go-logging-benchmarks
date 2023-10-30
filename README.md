@@ -1,8 +1,10 @@
-# Benchmarks for Go Logging Libraries
+# Go Logging Benchmarks
 
-This repo compares the performance of several
+This repo compares the performance of popular
 [Go Logging Libraries](https://betterstack.com/community/guides/logging/best-golang-logging-libraries/)
-. The results are automatically updated once a day.
+including the new Slog package.
+
+[See the results](https://betterstack-community.github.io/go-logging-benchmarks/).
 
 The following libraries are being tested:
 
@@ -11,11 +13,13 @@ The following libraries are being tested:
 - [Apex/log](https://github.com/uber-go/zap).
 - [Logrus](https://github.com/sirupsen/logrus).
 - [Slog](https://pkg.go.dev/log/slog).
+- [SlogZap](https://github.com/uber-go/zap/tree/master/exp/zapslog) (Slog with
+  Zap backend).
 - [Phuslog](https://github.com/phuslu/log).
 - [Log15](https://github.com/inconshreveable/log15).
 - [Logf](https://github.com/zerodha/logf).
 
-<!-- ![Screenshot or GIF of the application in action](screenshot.png). -->
+![Benchmark results](screenshot.png).
 
 ## 🟢 Prerequisites
 
