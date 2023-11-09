@@ -1,6 +1,6 @@
 [
   {
-    "Date": 1698634596,
+    "Date": 1699146000,
     "Suites": [
       {
         "Goos": "linux",
@@ -9,8 +9,8 @@
         "Benchmarks": [
           {
             "Name": "BenchmarkEvent/Zerolog-2",
-            "Runs": 5905716,
-            "NsPerOp": 202,
+            "Runs": 5728814,
+            "NsPerOp": 199,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -19,8 +19,8 @@
           },
           {
             "Name": "BenchmarkEvent/Phuslog-2",
-            "Runs": 7815597,
-            "NsPerOp": 152.9,
+            "Runs": 7651027,
+            "NsPerOp": 155.1,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -29,8 +29,8 @@
           },
           {
             "Name": "BenchmarkEvent/Zap-2",
-            "Runs": 3039232,
-            "NsPerOp": 379.2,
+            "Runs": 3030872,
+            "NsPerOp": 391.2,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -39,8 +39,8 @@
           },
           {
             "Name": "BenchmarkEvent/ZapSugar-2",
-            "Runs": 2437909,
-            "NsPerOp": 423.2,
+            "Runs": 2685512,
+            "NsPerOp": 435,
             "Mem": {
               "BytesPerOp": 16,
               "AllocsPerOp": 1,
@@ -49,8 +49,8 @@
           },
           {
             "Name": "BenchmarkEvent/Slog-2",
-            "Runs": 2123070,
-            "NsPerOp": 688.4,
+            "Runs": 2060930,
+            "NsPerOp": 671.6,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -59,8 +59,8 @@
           },
           {
             "Name": "BenchmarkEvent/SlogZap-2",
-            "Runs": 1780797,
-            "NsPerOp": 669.6,
+            "Runs": 1727172,
+            "NsPerOp": 700.7,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -69,8 +69,8 @@
           },
           {
             "Name": "BenchmarkEvent/Apex-2",
-            "Runs": 720235,
-            "NsPerOp": 1533,
+            "Runs": 701629,
+            "NsPerOp": 1592,
             "Mem": {
               "BytesPerOp": 240,
               "AllocsPerOp": 5,
@@ -79,8 +79,8 @@
           },
           {
             "Name": "BenchmarkEvent/Logrus-2",
-            "Runs": 381446,
-            "NsPerOp": 2836,
+            "Runs": 353214,
+            "NsPerOp": 3106,
             "Mem": {
               "BytesPerOp": 1112,
               "AllocsPerOp": 23,
@@ -89,8 +89,8 @@
           },
           {
             "Name": "BenchmarkEvent/Log15-2",
-            "Runs": 252303,
-            "NsPerOp": 4378,
+            "Runs": 238414,
+            "NsPerOp": 4808,
             "Mem": {
               "BytesPerOp": 1432,
               "AllocsPerOp": 20,
@@ -99,8 +99,8 @@
           },
           {
             "Name": "BenchmarkEvent/Logf-2",
-            "Runs": 3740556,
-            "NsPerOp": 332.4,
+            "Runs": 3937513,
+            "NsPerOp": 309.1,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -109,8 +109,8 @@
           },
           {
             "Name": "BenchmarkDisabled/Zerolog-2",
-            "Runs": 370987077,
-            "NsPerOp": 3.203,
+            "Runs": 367851555,
+            "NsPerOp": 3.212,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -119,8 +119,8 @@
           },
           {
             "Name": "BenchmarkDisabled/Phuslog-2",
-            "Runs": 398459731,
-            "NsPerOp": 3.002,
+            "Runs": 401664356,
+            "NsPerOp": 3.003,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -129,8 +129,8 @@
           },
           {
             "Name": "BenchmarkDisabled/Zap-2",
-            "Runs": 248651306,
-            "NsPerOp": 4.866,
+            "Runs": 247756048,
+            "NsPerOp": 4.842,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -139,8 +139,8 @@
           },
           {
             "Name": "BenchmarkDisabled/ZapSugar-2",
-            "Runs": 43983702,
-            "NsPerOp": 28.28,
+            "Runs": 43463934,
+            "NsPerOp": 26.76,
             "Mem": {
               "BytesPerOp": 16,
               "AllocsPerOp": 1,
@@ -149,8 +149,8 @@
           },
           {
             "Name": "BenchmarkDisabled/Slog-2",
-            "Runs": 236057536,
-            "NsPerOp": 5.056,
+            "Runs": 235758188,
+            "NsPerOp": 5.996,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -159,8 +159,8 @@
           },
           {
             "Name": "BenchmarkDisabled/SlogZap-2",
-            "Runs": 208372959,
-            "NsPerOp": 5.733,
+            "Runs": 208806332,
+            "NsPerOp": 5.775,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -169,8 +169,8 @@
           },
           {
             "Name": "BenchmarkDisabled/Apex-2",
-            "Runs": 306554712,
-            "NsPerOp": 3.731,
+            "Runs": 315350218,
+            "NsPerOp": 3.923,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -179,8 +179,8 @@
           },
           {
             "Name": "BenchmarkDisabled/Logrus-2",
-            "Runs": 44581285,
-            "NsPerOp": 26.79,
+            "Runs": 49486090,
+            "NsPerOp": 26.35,
             "Mem": {
               "BytesPerOp": 16,
               "AllocsPerOp": 1,
@@ -189,8 +189,8 @@
           },
           {
             "Name": "BenchmarkDisabled/Log15-2",
-            "Runs": 1335022,
-            "NsPerOp": 876.7,
+            "Runs": 1383057,
+            "NsPerOp": 962.5,
             "Mem": {
               "BytesPerOp": 456,
               "AllocsPerOp": 3,
@@ -199,8 +199,8 @@
           },
           {
             "Name": "BenchmarkDisabled/Logf-2",
-            "Runs": 233290237,
-            "NsPerOp": 4.986,
+            "Runs": 243517232,
+            "NsPerOp": 4.935,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -209,8 +209,8 @@
           },
           {
             "Name": "BenchmarkEventFmt/Zerolog-2",
-            "Runs": 1817613,
-            "NsPerOp": 641.6,
+            "Runs": 1771231,
+            "NsPerOp": 669.7,
             "Mem": {
               "BytesPerOp": 112,
               "AllocsPerOp": 1,
@@ -219,8 +219,8 @@
           },
           {
             "Name": "BenchmarkEventFmt/Phuslog-2",
-            "Runs": 2010880,
-            "NsPerOp": 590.7,
+            "Runs": 1828608,
+            "NsPerOp": 647.6,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -230,7 +230,7 @@
           {
             "Name": "BenchmarkEventFmt/Zap-2",
             "Runs": 1000000,
-            "NsPerOp": 1134,
+            "NsPerOp": 1051,
             "Mem": {
               "BytesPerOp": 112,
               "AllocsPerOp": 1,
@@ -240,7 +240,7 @@
           {
             "Name": "BenchmarkEventFmt/ZapSugar-2",
             "Runs": 1000000,
-            "NsPerOp": 1216,
+            "NsPerOp": 1172,
             "Mem": {
               "BytesPerOp": 112,
               "AllocsPerOp": 1,
@@ -250,7 +250,7 @@
           {
             "Name": "BenchmarkEventFmt/Slog-2",
             "Runs": 1000000,
-            "NsPerOp": 1140,
+            "NsPerOp": 1120,
             "Mem": {
               "BytesPerOp": 112,
               "AllocsPerOp": 1,
@@ -259,8 +259,8 @@
           },
           {
             "Name": "BenchmarkEventFmt/SlogZap-2",
-            "Runs": 932607,
-            "NsPerOp": 1336,
+            "Runs": 912399,
+            "NsPerOp": 1623,
             "Mem": {
               "BytesPerOp": 112,
               "AllocsPerOp": 1,
@@ -269,8 +269,8 @@
           },
           {
             "Name": "BenchmarkEventFmt/Apex-2",
-            "Runs": 414228,
-            "NsPerOp": 2689,
+            "Runs": 415801,
+            "NsPerOp": 2637,
             "Mem": {
               "BytesPerOp": 352,
               "AllocsPerOp": 6,
@@ -279,8 +279,8 @@
           },
           {
             "Name": "BenchmarkEventFmt/Logrus-2",
-            "Runs": 268638,
-            "NsPerOp": 4069,
+            "Runs": 279564,
+            "NsPerOp": 3986,
             "Mem": {
               "BytesPerOp": 1288,
               "AllocsPerOp": 24,
@@ -289,8 +289,8 @@
           },
           {
             "Name": "BenchmarkEventFmt/Log15-2",
-            "Runs": 202786,
-            "NsPerOp": 5741,
+            "Runs": 202158,
+            "NsPerOp": 5603,
             "Mem": {
               "BytesPerOp": 1608,
               "AllocsPerOp": 21,
@@ -299,8 +299,8 @@
           },
           {
             "Name": "BenchmarkEventFmt/Logf-2",
-            "Runs": 1243320,
-            "NsPerOp": 893.2,
+            "Runs": 1277101,
+            "NsPerOp": 907.8,
             "Mem": {
               "BytesPerOp": 112,
               "AllocsPerOp": 1,
@@ -309,8 +309,8 @@
           },
           {
             "Name": "BenchmarkDisabledFmt/Zerolog-2",
-            "Runs": 290606980,
-            "NsPerOp": 4.14,
+            "Runs": 292297267,
+            "NsPerOp": 4.082,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -319,8 +319,8 @@
           },
           {
             "Name": "BenchmarkDisabledFmt/Phuslog-2",
-            "Runs": 341013748,
-            "NsPerOp": 3.526,
+            "Runs": 342687490,
+            "NsPerOp": 3.493,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -329,8 +329,8 @@
           },
           {
             "Name": "BenchmarkDisabledFmt/Zap-2",
-            "Runs": 2842280,
-            "NsPerOp": 424.1,
+            "Runs": 2831624,
+            "NsPerOp": 426.2,
             "Mem": {
               "BytesPerOp": 112,
               "AllocsPerOp": 1,
@@ -339,8 +339,8 @@
           },
           {
             "Name": "BenchmarkDisabledFmt/ZapSugar-2",
-            "Runs": 254550438,
-            "NsPerOp": 4.669,
+            "Runs": 255541135,
+            "NsPerOp": 4.701,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -349,8 +349,8 @@
           },
           {
             "Name": "BenchmarkDisabledFmt/Slog-2",
-            "Runs": 2806680,
-            "NsPerOp": 425.9,
+            "Runs": 2826790,
+            "NsPerOp": 610.9,
             "Mem": {
               "BytesPerOp": 112,
               "AllocsPerOp": 1,
@@ -359,8 +359,8 @@
           },
           {
             "Name": "BenchmarkDisabledFmt/SlogZap-2",
-            "Runs": 2806731,
-            "NsPerOp": 422.3,
+            "Runs": 2003038,
+            "NsPerOp": 608.3,
             "Mem": {
               "BytesPerOp": 112,
               "AllocsPerOp": 1,
@@ -369,8 +369,8 @@
           },
           {
             "Name": "BenchmarkDisabledFmt/Apex-2",
-            "Runs": 2821064,
-            "NsPerOp": 423,
+            "Runs": 2574620,
+            "NsPerOp": 585.2,
             "Mem": {
               "BytesPerOp": 112,
               "AllocsPerOp": 1,
@@ -379,8 +379,8 @@
           },
           {
             "Name": "BenchmarkDisabledFmt/Logrus-2",
-            "Runs": 504675818,
-            "NsPerOp": 2.377,
+            "Runs": 505752158,
+            "NsPerOp": 2.401,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -389,8 +389,8 @@
           },
           {
             "Name": "BenchmarkDisabledFmt/Log15-2",
-            "Runs": 818116,
-            "NsPerOp": 1350,
+            "Runs": 856647,
+            "NsPerOp": 1309,
             "Mem": {
               "BytesPerOp": 568,
               "AllocsPerOp": 4,
@@ -399,8 +399,8 @@
           },
           {
             "Name": "BenchmarkDisabledFmt/Logf-2",
-            "Runs": 2784694,
-            "NsPerOp": 432.9,
+            "Runs": 2761569,
+            "NsPerOp": 487.5,
             "Mem": {
               "BytesPerOp": 112,
               "AllocsPerOp": 1,
@@ -409,8 +409,8 @@
           },
           {
             "Name": "BenchmarkEventCtx/Zerolog-2",
-            "Runs": 488940,
-            "NsPerOp": 2200,
+            "Runs": 481785,
+            "NsPerOp": 2213,
             "Mem": {
               "BytesPerOp": 552,
               "AllocsPerOp": 12,
@@ -419,8 +419,8 @@
           },
           {
             "Name": "BenchmarkEventCtx/Phuslog-2",
-            "Runs": 242036,
-            "NsPerOp": 4683,
+            "Runs": 248384,
+            "NsPerOp": 5040,
             "Mem": {
               "BytesPerOp": 552,
               "AllocsPerOp": 12,
@@ -429,8 +429,8 @@
           },
           {
             "Name": "BenchmarkEventCtx/Zap-2",
-            "Runs": 329737,
-            "NsPerOp": 3656,
+            "Runs": 326706,
+            "NsPerOp": 4529,
             "Mem": {
               "BytesPerOp": 1176,
               "AllocsPerOp": 15,
@@ -439,18 +439,18 @@
           },
           {
             "Name": "BenchmarkEventCtx/ZapSugar-2",
-            "Runs": 278485,
-            "NsPerOp": 4703,
+            "Runs": 281208,
+            "NsPerOp": 4908,
             "Mem": {
-              "BytesPerOp": 1856,
+              "BytesPerOp": 1857,
               "AllocsPerOp": 21,
               "MBPerSec": 0
             }
           },
           {
             "Name": "BenchmarkEventCtx/Slog-2",
-            "Runs": 177732,
-            "NsPerOp": 6649,
+            "Runs": 175344,
+            "NsPerOp": 6692,
             "Mem": {
               "BytesPerOp": 2385,
               "AllocsPerOp": 28,
@@ -459,8 +459,8 @@
           },
           {
             "Name": "BenchmarkEventCtx/SlogZap-2",
-            "Runs": 219343,
-            "NsPerOp": 5118,
+            "Runs": 251200,
+            "NsPerOp": 5269,
             "Mem": {
               "BytesPerOp": 1768,
               "AllocsPerOp": 19,
@@ -469,8 +469,8 @@
           },
           {
             "Name": "BenchmarkEventCtx/Apex-2",
-            "Runs": 75859,
-            "NsPerOp": 15278,
+            "Runs": 74449,
+            "NsPerOp": 15276,
             "Mem": {
               "BytesPerOp": 3580,
               "AllocsPerOp": 52,
@@ -479,18 +479,18 @@
           },
           {
             "Name": "BenchmarkEventCtx/Logrus-2",
-            "Runs": 62077,
-            "NsPerOp": 18818,
+            "Runs": 60550,
+            "NsPerOp": 18921,
             "Mem": {
-              "BytesPerOp": 5504,
+              "BytesPerOp": 5505,
               "AllocsPerOp": 67,
               "MBPerSec": 0
             }
           },
           {
             "Name": "BenchmarkEventCtx/Log15-2",
-            "Runs": 63866,
-            "NsPerOp": 18668,
+            "Runs": 59911,
+            "NsPerOp": 18682,
             "Mem": {
               "BytesPerOp": 5293,
               "AllocsPerOp": 63,
@@ -499,8 +499,8 @@
           },
           {
             "Name": "BenchmarkEventCtx/Logf-2",
-            "Runs": 134353,
-            "NsPerOp": 9141,
+            "Runs": 135111,
+            "NsPerOp": 9135,
             "Mem": {
               "BytesPerOp": 2512,
               "AllocsPerOp": 88,
@@ -509,8 +509,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtx/Zerolog-2",
-            "Runs": 14095627,
-            "NsPerOp": 86.22,
+            "Runs": 15530148,
+            "NsPerOp": 86.01,
             "Mem": {
               "BytesPerOp": 72,
               "AllocsPerOp": 2,
@@ -519,8 +519,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtx/Phuslog-2",
-            "Runs": 10830536,
-            "NsPerOp": 108.4,
+            "Runs": 10711928,
+            "NsPerOp": 107.2,
             "Mem": {
               "BytesPerOp": 72,
               "AllocsPerOp": 2,
@@ -529,8 +529,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtx/Zap-2",
-            "Runs": 3042080,
-            "NsPerOp": 399.2,
+            "Runs": 3000459,
+            "NsPerOp": 398.1,
             "Mem": {
               "BytesPerOp": 696,
               "AllocsPerOp": 5,
@@ -539,8 +539,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtx/ZapSugar-2",
-            "Runs": 5644968,
-            "NsPerOp": 213.9,
+            "Runs": 5546832,
+            "NsPerOp": 214.5,
             "Mem": {
               "BytesPerOp": 176,
               "AllocsPerOp": 8,
@@ -549,8 +549,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtx/Slog-2",
-            "Runs": 3646539,
-            "NsPerOp": 328.7,
+            "Runs": 3551578,
+            "NsPerOp": 336.8,
             "Mem": {
               "BytesPerOp": 504,
               "AllocsPerOp": 5,
@@ -559,8 +559,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtx/SlogZap-2",
-            "Runs": 3364945,
-            "NsPerOp": 338.2,
+            "Runs": 3606296,
+            "NsPerOp": 337.3,
             "Mem": {
               "BytesPerOp": 504,
               "AllocsPerOp": 5,
@@ -569,8 +569,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtx/Apex-2",
-            "Runs": 1712299,
-            "NsPerOp": 705.6,
+            "Runs": 1682900,
+            "NsPerOp": 710.2,
             "Mem": {
               "BytesPerOp": 921,
               "AllocsPerOp": 12,
@@ -579,8 +579,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtx/Logrus-2",
-            "Runs": 855244,
-            "NsPerOp": 1300,
+            "Runs": 787593,
+            "NsPerOp": 1332,
             "Mem": {
               "BytesPerOp": 1554,
               "AllocsPerOp": 14,
@@ -589,8 +589,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtx/Log15-2",
-            "Runs": 740425,
-            "NsPerOp": 1469,
+            "Runs": 736132,
+            "NsPerOp": 1468,
             "Mem": {
               "BytesPerOp": 1208,
               "AllocsPerOp": 13,
@@ -599,8 +599,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtx/Logf-2",
-            "Runs": 4892652,
-            "NsPerOp": 207,
+            "Runs": 5381588,
+            "NsPerOp": 213.3,
             "Mem": {
               "BytesPerOp": 176,
               "AllocsPerOp": 8,
@@ -609,8 +609,8 @@
           },
           {
             "Name": "BenchmarkEventCtxWeak/Zerolog-2",
-            "Runs": 279416,
-            "NsPerOp": 4269,
+            "Runs": 279220,
+            "NsPerOp": 4144,
             "Mem": {
               "BytesPerOp": 1296,
               "AllocsPerOp": 19,
@@ -619,8 +619,8 @@
           },
           {
             "Name": "BenchmarkEventCtxWeak/Phuslog-2",
-            "Runs": 211512,
-            "NsPerOp": 5648,
+            "Runs": 218810,
+            "NsPerOp": 5629,
             "Mem": {
               "BytesPerOp": 1233,
               "AllocsPerOp": 19,
@@ -629,8 +629,8 @@
           },
           {
             "Name": "BenchmarkEventCtxWeak/Zap-2",
-            "Runs": 266643,
-            "NsPerOp": 4439,
+            "Runs": 279825,
+            "NsPerOp": 4440,
             "Mem": {
               "BytesPerOp": 1857,
               "AllocsPerOp": 21,
@@ -639,8 +639,8 @@
           },
           {
             "Name": "BenchmarkEventCtxWeak/ZapSugar-2",
-            "Runs": 274120,
-            "NsPerOp": 4347,
+            "Runs": 264781,
+            "NsPerOp": 4678,
             "Mem": {
               "BytesPerOp": 1857,
               "AllocsPerOp": 21,
@@ -649,8 +649,8 @@
           },
           {
             "Name": "BenchmarkEventCtxWeak/Slog-2",
-            "Runs": 167905,
-            "NsPerOp": 6741,
+            "Runs": 172053,
+            "NsPerOp": 6681,
             "Mem": {
               "BytesPerOp": 2265,
               "AllocsPerOp": 32,
@@ -659,8 +659,8 @@
           },
           {
             "Name": "BenchmarkEventCtxWeak/SlogZap-2",
-            "Runs": 243238,
-            "NsPerOp": 5454,
+            "Runs": 242470,
+            "NsPerOp": 5128,
             "Mem": {
               "BytesPerOp": 1649,
               "AllocsPerOp": 23,
@@ -669,8 +669,8 @@
           },
           {
             "Name": "BenchmarkEventCtxWeak/Apex-2",
-            "Runs": 74206,
-            "NsPerOp": 15770,
+            "Runs": 73912,
+            "NsPerOp": 15889,
             "Mem": {
               "BytesPerOp": 3596,
               "AllocsPerOp": 53,
@@ -679,28 +679,28 @@
           },
           {
             "Name": "BenchmarkEventCtxWeak/Logrus-2",
-            "Runs": 63494,
-            "NsPerOp": 18823,
+            "Runs": 63094,
+            "NsPerOp": 18782,
             "Mem": {
-              "BytesPerOp": 5505,
+              "BytesPerOp": 5504,
               "AllocsPerOp": 67,
               "MBPerSec": 0
             }
           },
           {
             "Name": "BenchmarkEventCtxWeak/Log15-2",
-            "Runs": 60355,
-            "NsPerOp": 19590,
+            "Runs": 60472,
+            "NsPerOp": 19788,
             "Mem": {
-              "BytesPerOp": 5636,
+              "BytesPerOp": 5637,
               "AllocsPerOp": 66,
               "MBPerSec": 0
             }
           },
           {
             "Name": "BenchmarkEventCtxWeak/Logf-2",
-            "Runs": 67521,
-            "NsPerOp": 18299,
+            "Runs": 68695,
+            "NsPerOp": 18927,
             "Mem": {
               "BytesPerOp": 4849,
               "AllocsPerOp": 168,
@@ -709,8 +709,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtxWeak/Zerolog-2",
-            "Runs": 6092437,
-            "NsPerOp": 201.7,
+            "Runs": 5819109,
+            "NsPerOp": 219.7,
             "Mem": {
               "BytesPerOp": 176,
               "AllocsPerOp": 8,
@@ -719,8 +719,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtxWeak/Phuslog-2",
-            "Runs": 2132650,
-            "NsPerOp": 562.7,
+            "Runs": 2096779,
+            "NsPerOp": 636,
             "Mem": {
               "BytesPerOp": 753,
               "AllocsPerOp": 9,
@@ -729,8 +729,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtxWeak/Zap-2",
-            "Runs": 5754704,
-            "NsPerOp": 206.9,
+            "Runs": 5791393,
+            "NsPerOp": 215.2,
             "Mem": {
               "BytesPerOp": 176,
               "AllocsPerOp": 8,
@@ -739,8 +739,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtxWeak/ZapSugar-2",
-            "Runs": 6008433,
-            "NsPerOp": 205.1,
+            "Runs": 5559583,
+            "NsPerOp": 204.5,
             "Mem": {
               "BytesPerOp": 176,
               "AllocsPerOp": 8,
@@ -749,8 +749,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtxWeak/Slog-2",
-            "Runs": 6117195,
-            "NsPerOp": 197.2,
+            "Runs": 5790453,
+            "NsPerOp": 207.2,
             "Mem": {
               "BytesPerOp": 176,
               "AllocsPerOp": 8,
@@ -759,8 +759,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtxWeak/SlogZap-2",
-            "Runs": 5897056,
-            "NsPerOp": 214.3,
+            "Runs": 5757088,
+            "NsPerOp": 206.1,
             "Mem": {
               "BytesPerOp": 176,
               "AllocsPerOp": 8,
@@ -769,8 +769,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtxWeak/Apex-2",
-            "Runs": 1631784,
-            "NsPerOp": 824.1,
+            "Runs": 1617018,
+            "NsPerOp": 745.1,
             "Mem": {
               "BytesPerOp": 937,
               "AllocsPerOp": 13,
@@ -779,8 +779,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtxWeak/Logrus-2",
-            "Runs": 774928,
-            "NsPerOp": 1301,
+            "Runs": 901479,
+            "NsPerOp": 1380,
             "Mem": {
               "BytesPerOp": 1554,
               "AllocsPerOp": 14,
@@ -789,8 +789,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtxWeak/Log15-2",
-            "Runs": 692515,
-            "NsPerOp": 1529,
+            "Runs": 702535,
+            "NsPerOp": 1562,
             "Mem": {
               "BytesPerOp": 1496,
               "AllocsPerOp": 13,
@@ -799,8 +799,8 @@
           },
           {
             "Name": "BenchmarkDisabledCtxWeak/Logf-2",
-            "Runs": 5740806,
-            "NsPerOp": 206.3,
+            "Runs": 6033651,
+            "NsPerOp": 205.8,
             "Mem": {
               "BytesPerOp": 176,
               "AllocsPerOp": 8,
@@ -809,8 +809,8 @@
           },
           {
             "Name": "BenchmarkEventAccumulatedCtx/Zerolog-2",
-            "Runs": 6809348,
-            "NsPerOp": 174.8,
+            "Runs": 6371049,
+            "NsPerOp": 178.6,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -819,8 +819,8 @@
           },
           {
             "Name": "BenchmarkEventAccumulatedCtx/Phuslog-2",
-            "Runs": 5465071,
-            "NsPerOp": 216.5,
+            "Runs": 7304224,
+            "NsPerOp": 164.3,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -829,8 +829,8 @@
           },
           {
             "Name": "BenchmarkEventAccumulatedCtx/Zap-2",
-            "Runs": 2817568,
-            "NsPerOp": 401.5,
+            "Runs": 2950906,
+            "NsPerOp": 404.8,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -839,8 +839,8 @@
           },
           {
             "Name": "BenchmarkEventAccumulatedCtx/ZapSugar-2",
-            "Runs": 2580008,
-            "NsPerOp": 446.9,
+            "Runs": 2532981,
+            "NsPerOp": 446.2,
             "Mem": {
               "BytesPerOp": 16,
               "AllocsPerOp": 1,
@@ -849,8 +849,8 @@
           },
           {
             "Name": "BenchmarkEventAccumulatedCtx/Slog-2",
-            "Runs": 1743771,
-            "NsPerOp": 649.4,
+            "Runs": 1704182,
+            "NsPerOp": 589.4,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -859,8 +859,8 @@
           },
           {
             "Name": "BenchmarkEventAccumulatedCtx/SlogZap-2",
-            "Runs": 1712601,
-            "NsPerOp": 681,
+            "Runs": 1613314,
+            "NsPerOp": 739.9,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -869,18 +869,18 @@
           },
           {
             "Name": "BenchmarkEventAccumulatedCtx/Apex-2",
-            "Runs": 83155,
-            "NsPerOp": 14078,
+            "Runs": 82260,
+            "NsPerOp": 14284,
             "Mem": {
-              "BytesPerOp": 2659,
+              "BytesPerOp": 2658,
               "AllocsPerOp": 40,
               "MBPerSec": 0
             }
           },
           {
             "Name": "BenchmarkEventAccumulatedCtx/Logrus-2",
-            "Runs": 374164,
-            "NsPerOp": 2788,
+            "Runs": 387086,
+            "NsPerOp": 2864,
             "Mem": {
               "BytesPerOp": 1112,
               "AllocsPerOp": 23,
@@ -889,18 +889,18 @@
           },
           {
             "Name": "BenchmarkEventAccumulatedCtx/Log15-2",
-            "Runs": 66410,
-            "NsPerOp": 17535,
+            "Runs": 65220,
+            "NsPerOp": 18135,
             "Mem": {
-              "BytesPerOp": 4829,
+              "BytesPerOp": 4828,
               "AllocsPerOp": 54,
               "MBPerSec": 0
             }
           },
           {
             "Name": "BenchmarkEventAccumulatedCtx/Logf-2",
-            "Runs": 137203,
-            "NsPerOp": 8618,
+            "Runs": 137943,
+            "NsPerOp": 8777,
             "Mem": {
               "BytesPerOp": 2336,
               "AllocsPerOp": 80,
@@ -909,8 +909,8 @@
           },
           {
             "Name": "BenchmarkDisabledAccumulatedCtx/Zerolog-2",
-            "Runs": 375505312,
-            "NsPerOp": 3.202,
+            "Runs": 375090556,
+            "NsPerOp": 3.221,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -919,8 +919,8 @@
           },
           {
             "Name": "BenchmarkDisabledAccumulatedCtx/Phuslog-2",
-            "Runs": 403103226,
-            "NsPerOp": 2.97,
+            "Runs": 400674669,
+            "NsPerOp": 2.991,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -929,8 +929,8 @@
           },
           {
             "Name": "BenchmarkDisabledAccumulatedCtx/Zap-2",
-            "Runs": 248920815,
-            "NsPerOp": 4.856,
+            "Runs": 248106943,
+            "NsPerOp": 4.839,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -939,8 +939,8 @@
           },
           {
             "Name": "BenchmarkDisabledAccumulatedCtx/ZapSugar-2",
-            "Runs": 45152053,
-            "NsPerOp": 25.73,
+            "Runs": 43346649,
+            "NsPerOp": 25.42,
             "Mem": {
               "BytesPerOp": 16,
               "AllocsPerOp": 1,
@@ -949,8 +949,8 @@
           },
           {
             "Name": "BenchmarkDisabledAccumulatedCtx/Slog-2",
-            "Runs": 237806938,
-            "NsPerOp": 5.139,
+            "Runs": 235834730,
+            "NsPerOp": 5.059,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -959,8 +959,8 @@
           },
           {
             "Name": "BenchmarkDisabledAccumulatedCtx/SlogZap-2",
-            "Runs": 209750036,
-            "NsPerOp": 5.765,
+            "Runs": 209563912,
+            "NsPerOp": 5.723,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -969,8 +969,8 @@
           },
           {
             "Name": "BenchmarkDisabledAccumulatedCtx/Apex-2",
-            "Runs": 394112469,
-            "NsPerOp": 3.03,
+            "Runs": 392864918,
+            "NsPerOp": 3.036,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
@@ -979,8 +979,8 @@
           },
           {
             "Name": "BenchmarkDisabledAccumulatedCtx/Logrus-2",
-            "Runs": 48424294,
-            "NsPerOp": 23.5,
+            "Runs": 45938155,
+            "NsPerOp": 24.33,
             "Mem": {
               "BytesPerOp": 16,
               "AllocsPerOp": 1,
@@ -989,8 +989,8 @@
           },
           {
             "Name": "BenchmarkDisabledAccumulatedCtx/Log15-2",
-            "Runs": 1243078,
-            "NsPerOp": 956.1,
+            "Runs": 1232869,
+            "NsPerOp": 979,
             "Mem": {
               "BytesPerOp": 744,
               "AllocsPerOp": 4,
@@ -999,8 +999,8 @@
           },
           {
             "Name": "BenchmarkDisabledAccumulatedCtx/Logf-2",
-            "Runs": 224003674,
-            "NsPerOp": 5.353,
+            "Runs": 230748774,
+            "NsPerOp": 5.613,
             "Mem": {
               "BytesPerOp": 0,
               "AllocsPerOp": 0,
