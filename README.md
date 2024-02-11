@@ -12,7 +12,7 @@ The following libraries are being tested:
 
 - [Zerolog](https://github.com/rs/zerolog)
 - [Zap](https://github.com/uber-go/zap)
-- [Apex/log](https://github.com/uber-go/zap)
+- [Apex/log](https://github.com/apex/log)
 - [Logrus](https://github.com/sirupsen/logrus)
 - [Slog](https://pkg.go.dev/log/slog)
 - [SlogZap](https://github.com/uber-go/zap/tree/master/exp/zapslog) (Slog with
