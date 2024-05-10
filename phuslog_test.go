@@ -22,7 +22,7 @@ func phusFields(e *log.Entry) *log.Entry {
 		Time("now", ctxTime).
 		Strs("months", ctxMonths).
 		Ints("primes", ctxFirst10Primes).
-		Any("users", ctxUsers).
+		Objects("users", ctxUsers).
 		Err(ctxErr)
 
 	return e
