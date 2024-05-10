@@ -5,7 +5,7 @@ go 1.21
 require (
 	github.com/apex/log v1.9.0
 	github.com/inconshreveable/log15 v2.16.0+incompatible
-	github.com/phuslu/log v1.0.98
+	github.com/phuslu/log v1.0.99
 	github.com/rs/zerolog v1.30.0
 	github.com/sirupsen/logrus v1.9.3
 	github.com/zerodha/logf v0.5.5

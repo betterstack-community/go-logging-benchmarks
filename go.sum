@@ -43,8 +43,8 @@ github.com/mattn/go-isatty v0.0.19/go.mod h1:W+V8PltTTMOvKvAeJH7IuucS94S2C6jfK/D
 github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b/go.mod h1:01TrycV0kFyexm33Z7vhZRXopbI8J3TDReVlkTgMUxE=
 github.com/onsi/ginkgo v1.6.0/go.mod h1:lLunBs/Ym6LB5Z9jYTR76FiuTmxDTDusOGeTQH+WWjE=
 github.com/onsi/gomega v1.5.0/go.mod h1:ex+gbHU/CVuBBDIJjb2X0qEXbFg53c61hWP/1CpauHY=
-github.com/phuslu/log v1.0.98 h1:u+GTxbrzJsxZFMGzUUNthD8Dqj2t3xJsCEZwWWtbB58=
-github.com/phuslu/log v1.0.98/go.mod h1:F8osGJADo5qLK/0F88djWwdyoZZ9xDJQL1HYRHFEkS0=
+github.com/phuslu/log v1.0.99 h1:DcsYN7ONwGjJ+kjx0QacDq4p90xYFhcY6kRaMvjo9Fg=
+github.com/phuslu/log v1.0.99/go.mod h1:F8osGJADo5qLK/0F88djWwdyoZZ9xDJQL1HYRHFEkS0=
 github.com/pkg/errors v0.8.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
