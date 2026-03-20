@@ -15,13 +15,13 @@ type slogZapBench struct {
 func newSlogZap(w io.Writer) *slog.Logger {
 	l := newZap(w)
 
-	return slog.New(zapslog.NewHandler(l.Core(), nil))
+	return slog.New(zapslog.NewHandler(l.Core()))
 }
 
 func newSlogZapWithCtx(w io.Writer, attr []slog.Attr) *slog.Logger {
 	l := newZap(w)
 
-	h := zapslog.NewHandler(l.Core(), nil).WithAttrs(attr)
+	h := zapslog.NewHandler(l.Core()).WithAttrs(attr)
 
 	return slog.New(h)
 }
