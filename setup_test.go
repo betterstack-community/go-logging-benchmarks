@@ -106,6 +106,7 @@ var loggers = []logBenchmark{
 	&logrusBench{},
 	&log15Bench{},
 	&logfBench{},
+	&gookitSlogBench{},
 }
 
 type blackhole struct {
