@@ -17,6 +17,7 @@ The following libraries are being tested:
 - [Slog](https://pkg.go.dev/log/slog)
 - [SlogZap](https://github.com/uber-go/zap/tree/master/exp/zapslog) (Slog with
   Zap backend)
+- [SlogZerolog](https://github.com/rs/zerolog#integration-with-logslog) (Slog with zerolog backend)
 - [Phuslog](https://github.com/phuslu/log)
 - [Log15](https://github.com/inconshreveable/log15)
 - [Logf](https://github.com/zerodha/logf)
