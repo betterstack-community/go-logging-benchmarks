@@ -20,6 +20,7 @@ The following libraries are being tested:
 - [Phuslog](https://github.com/phuslu/log)
 - [Log15](https://github.com/inconshreveable/log15)
 - [Logf](https://github.com/zerodha/logf)
+- [GookitSlog](https://github.com/gookit/slog)
 
 ## 🟢 Prerequisites
 

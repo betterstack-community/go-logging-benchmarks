@@ -19,3 +19,4 @@ yarn-error.log*
 .env
 .env.test
 tags
+/.claude
