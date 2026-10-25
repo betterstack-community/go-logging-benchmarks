@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/inconshreveable/log15"
+	"github.com/inconshreveable/log15/v3"
 )
 
 type log15Bench struct {
